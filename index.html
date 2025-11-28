@@ -399,8 +399,6 @@ install.packages(&quot;tidygraph&quot;)
 install.packages(&quot;tibble&quot;)
 install.packages(&quot;quanteda.textplots&quot;)
 install.packages(&quot;spacyr&quot;)
-spacy_install() #install spacyr
-spacy_initialize() #initialise spacy to call from R
 
 
 #loading packages
@@ -412,7 +410,7 @@ library(tokenizers) #converts natural language into tokens
 library(udpipe) #NLP toolkit for &#39;tokenization&#39;, &#39;parts of speech tagging&#39;, &#39;lemmatization&#39; and &#39;dependency parsing&#39; of raw text.
 library(here) #an easier way to find files
 library(magrittr) #easily use %&gt;% (pipe == and then)
-library(here)
+library(spacyr)
 library(readr)
 library(purrr)</code></pre>
 <p><strong>2.Text basics </strong> Texts are called strings in R.</p>
