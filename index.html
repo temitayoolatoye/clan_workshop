@@ -418,18 +418,15 @@ library(purrr)</code></pre>
 text1&lt;-&quot;A LITERATURE REVIEW IS A SURVEY&quot;
 text2&lt;-&#39;Chinua Achebe, Wole Soyinka&#39;
 
-tolower(text1) #convert to lower case</code></pre>
-<pre><code>## [1] &quot;a literature review is a survey&quot;</code></pre>
-<pre class="r"><code>toupper(text2) #convert to upper case</code></pre>
-<pre><code>## [1] &quot;CHINUA ACHEBE, WOLE SOYINKA&quot;</code></pre>
-<pre class="r"><code>text1_2&lt;-c(text1, text2) #concatenate two strings
-print(text1_2) #print object</code></pre>
-<pre><code>## [1] &quot;A LITERATURE REVIEW IS A SURVEY&quot; &quot;Chinua Achebe, Wole Soyinka&quot;</code></pre>
-<pre class="r"><code>str(text1_2)     #inspect the structure of an object</code></pre>
-<pre><code>##  chr [1:2] &quot;A LITERATURE REVIEW IS A SURVEY&quot; &quot;Chinua Achebe, Wole Soyinka&quot;</code></pre>
-<pre class="r"><code>summary(text1_2) #generates a summary of the object</code></pre>
-<pre><code>##    Length     Class      Mode 
-##         2 character character</code></pre>
+tolower(text1) #convert to lower case
+toupper(text2) #convert to upper case
+text1_2&lt;-c(text1, text2) #concatenate two strings
+print(text1_2) #print object
+str(text1_2)     #inspect the structure of an object
+summary(text1_2) #generates a summary of the object
+</code></pre>
+
+  
 <p><strong>3. Accessing text files</strong></p>
 <pre class="r"><code>#loading a textfile
 text3 &lt;- readLines(here::here(&quot;data/pride_prejudice/chp1.txt&quot;))</code></pre>
