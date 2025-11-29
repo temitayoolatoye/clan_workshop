@@ -432,21 +432,6 @@ print(text1_2) #print object</code></pre>
 ##         2 character character</code></pre>
 <p><strong>3. Accessing text files</strong></p>
 <pre class="r"><code>#loading a textfile
-library(tidyverse)   # loads %&gt;% and all tidyverse packages</code></pre>
-<pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-## ✔ dplyr     1.1.4     ✔ readr     2.1.5
-## ✔ forcats   1.0.0     ✔ stringr   1.5.1
-## ✔ ggplot2   4.0.0     ✔ tibble    3.3.0
-## ✔ lubridate 1.9.4     ✔ tidyr     1.3.1
-## ✔ purrr     1.0.4     
-## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ dplyr::filter() masks stats::filter()
-## ✖ dplyr::lag()    masks stats::lag()
-## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-<pre class="r"><code>library(here)</code></pre>
-<pre><code>## here() starts at /Users/jolietemi/Documents/data_sci/lex_research/clan</code></pre>
-<pre class="r"><code>library(readr)
-library(purrr)
 text3 &lt;- readLines(here::here(&quot;data/pride_prejudice/chp1.txt&quot;))</code></pre>
 <pre><code>## Warning in readLines(here::here(&quot;data/pride_prejudice/chp1.txt&quot;)): incomplete
 ## final line found on
