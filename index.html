@@ -430,9 +430,6 @@ summary(text1_2) #generates a summary of the object
 <p><strong>3. Accessing text files</strong></p>
 <pre class="r"><code>#loading a textfile
 text3 &lt;- readLines(here::here(&quot;data/pride_prejudice/chp1.txt&quot;))</code></pre>
-<pre><code>## Warning in readLines(here::here(&quot;data/pride_prejudice/chp1.txt&quot;)): incomplete
-## final line found on
-## &#39;/Users/jolietemi/Documents/data_sci/lex_research/clan/data/pride_prejudice/chp1.txt&#39;</code></pre>
 <pre class="r"><code>#loading multiple textfiles from a folder
 pride &lt;- list.files(here::here(&quot;data/pride_prejudice&quot;), full.names = T, pattern = &quot;.*txt&quot;) %&gt;% 
   purrr::map_chr(~ readr::read_file(.))
