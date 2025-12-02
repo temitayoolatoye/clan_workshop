@@ -454,7 +454,7 @@ writeLines(pride[1], here::here(&quot;output&quot;, &quot;pride_text1.txt&quot;)
 
 #Save multiple files into a folder
 #define location
-outs &lt;- file.path(here::here(), &quot;data/output&quot;, paste0(&quot;result_&quot;, seq_along(pride), &quot;.txt&quot;)) 
+outs &lt;- file.path(here::here(), &quot;/output&quot;, paste0(&quot;result_&quot;, seq_along(pride), &quot;.txt&quot;)) 
 
 # save the files
 lapply(seq_along(pride), function(i) 
