@@ -1967,95 +1967,17 @@ ggplot(socdat, aes(x = Category, fill = Variant)) +
 and ggraph.</b></li>
 </ol>
 <pre class="r"><code># activate packages
-library(flextable)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;flextable&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:purrr&#39;:
-## 
-##     compose</code></pre>
-<pre class="r"><code>library(GGally)
+library(flextable)
+library(GGally)
 library(ggraph)
-library(igraph)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;igraph&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:flextable&#39;:
-## 
-##     compose</code></pre>
-<pre><code>## The following objects are masked from &#39;package:lubridate&#39;:
-## 
-##     %--%, union</code></pre>
-<pre><code>## The following objects are masked from &#39;package:dplyr&#39;:
-## 
-##     as_data_frame, groups, union</code></pre>
-<pre><code>## The following objects are masked from &#39;package:purrr&#39;:
-## 
-##     compose, simplify</code></pre>
-<pre><code>## The following object is masked from &#39;package:tidyr&#39;:
-## 
-##     crossing</code></pre>
-<pre><code>## The following object is masked from &#39;package:tibble&#39;:
-## 
-##     as_data_frame</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     decompose, spectrum</code></pre>
-<pre><code>## The following object is masked from &#39;package:base&#39;:
-## 
-##     union</code></pre>
-<pre class="r"><code>library(Matrix)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;Matrix&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:tidyr&#39;:
-## 
-##     expand, pack, unpack</code></pre>
-<pre class="r"><code>library(quanteda)
-library(sna)</code></pre>
-<pre><code>## Loading required package: statnet.common</code></pre>
-<pre><code>## 
-## Attaching package: &#39;statnet.common&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     attr, order, replace</code></pre>
-<pre><code>## Loading required package: network</code></pre>
-<pre><code>## 
-## &#39;network&#39; 1.20.0 (2026-02-06), part of the Statnet Project
-## * &#39;news(package=&quot;network&quot;)&#39; for changes since last version
-## * &#39;citation(&quot;network&quot;)&#39; for citation information
-## * &#39;https://statnet.org&#39; for help, support, and other information</code></pre>
-<pre><code>## 
-## Attaching package: &#39;network&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:igraph&#39;:
-## 
-##     %c%, %s%, add.edges, add.vertices, delete.edges, delete.vertices,
-##     get.edge.attribute, get.edges, get.vertex.attribute, is.bipartite,
-##     is.directed, list.edge.attributes, list.vertex.attributes,
-##     set.edge.attribute, set.vertex.attribute</code></pre>
-<pre><code>## sna: Tools for Social Network Analysis
-## Version 2.8 created on 2024-09-07.
-## copyright (c) 2005, Carter T. Butts, University of California-Irvine
-##  For citation information, type citation(&quot;sna&quot;).
-##  Type help(package=&quot;sna&quot;) to get started.</code></pre>
-<pre><code>## 
-## Attaching package: &#39;sna&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:igraph&#39;:
-## 
-##     betweenness, bonpow, closeness, components, degree, dyad.census,
-##     evcent, hierarchy, is.connected, neighborhood, triad.census</code></pre>
-<pre class="r"><code>library(tidygraph)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;tidygraph&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:igraph&#39;:
-## 
-##     groups</code></pre>
-<pre><code>## The following object is masked from &#39;package:quanteda&#39;:
-## 
-##     convert</code></pre>
-<pre><code>## The following object is masked from &#39;package:stats&#39;:
-## 
-##     filter</code></pre>
-<pre class="r"><code>library(tidyverse)
+library(igraph)
+>library(Matrix)
+library(quanteda)
+library(sna)
+library(tidyverse)
 library(tibble)
 library(spacyr) </code></pre>
+  
 <ol start="8" style="list-style-type: decimal">
 <li><b>Network Analysis - Extracting Named Entities</b></li>
 </ol>
