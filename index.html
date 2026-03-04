@@ -657,6 +657,10 @@ ggplot(socdat, aes(x = Category, y = Words)) +
 ggplot(socdat, aes(x = Age, y = Words, colour = Variant)) +
   geom_line()
 
+#boxplot
+ggplot(socdat, aes(x = Category, y = Words)) +
+  geom_boxplot()
+
 #bar plot
 ggplot(socdat, aes(x = Category, fill = Variant)) +
   geom_bar()
