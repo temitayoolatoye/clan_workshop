@@ -1663,60 +1663,19 @@ install.packages(&quot;spacyr&quot;)
 install.packages(&quot;textplot&quot;)</code></pre>
 <pre class="r"><code>#loading packages
 library(quanteda) #toolkit for quantitative text data analysis</code></pre>
-<pre><code>## Package version: 4.3.1
-## Unicode version: 14.0
-## ICU version: 71.1</code></pre>
-<pre><code>## Parallel computing: disabled</code></pre>
-<pre><code>## See https://quanteda.io for tutorials and examples.</code></pre>
-<pre class="r"><code>library(tidyverse) #for text analysis and visualisations</code></pre>
-<pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-## ✔ dplyr     1.2.0     ✔ readr     2.2.0
-## ✔ forcats   1.0.1     ✔ stringr   1.6.0
-## ✔ ggplot2   4.0.2     ✔ tibble    3.3.1
-## ✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-## ✔ purrr     1.2.1</code></pre>
-<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## ✖ dplyr::filter() masks stats::filter()
-## ✖ dplyr::lag()    masks stats::lag()
-## ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+  
 <pre class="r"><code>library(tidytext) # for tidy conversion of texts
 library(tm) # for textmining</code></pre>
-<pre><code>## Loading required package: NLP
-## 
-## Attaching package: &#39;NLP&#39;
-## 
-## The following object is masked from &#39;package:ggplot2&#39;:
-## 
-##     annotate
-## 
-## The following objects are masked from &#39;package:quanteda&#39;:
-## 
-##     meta, meta&lt;-
-## 
-## 
-## Attaching package: &#39;tm&#39;
-## 
-## The following object is masked from &#39;package:quanteda&#39;:
-## 
-##     stopwords</code></pre>
+
 <pre class="r"><code>library(tokenizers) #converts natural language into tokens
 library(udpipe) #NLP toolkit for &#39;tokenization&#39;, &#39;parts of speech tagging&#39;, &#39;lemmatization&#39; and &#39;dependency parsing&#39; of raw text.
 library(here) #an easier way to find files</code></pre>
-<pre><code>## here() starts at /Users/jolietemi/Documents/lex_research</code></pre>
 <pre class="r"><code>library(magrittr) #easily use %&gt;% (pipe == and then)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;magrittr&#39;
-## 
-## The following object is masked from &#39;package:purrr&#39;:
-## 
-##     set_names
-## 
-## The following object is masked from &#39;package:tidyr&#39;:
-## 
-##     extract</code></pre>
+
 <pre class="r"><code>library(spacyr)
 library(readr)
 library(purrr)</code></pre>
+  
 <p>2.Text basics Texts are called strings in R.</p>
 <pre class="r"><code>#creating a string with double quotes &quot;&quot; or single quotes &#39;&#39;
 text1&lt;-&quot;A LITERATURE REVIEW IS A SURVEY&quot;
