@@ -577,6 +577,8 @@ pride_clean &lt;- pride %&gt;%
   stringr::str_squish()
 # remove very short elements
 pride_clean &lt;- pride_clean[nchar(pride_clean) &gt; 10]
+# ensure unique document names
+names(pride_clean) <- paste0(&quot;text&quot;, seq_along(pride_clean))
 # inspect data
 nchar(pride_clean)
 #inspect the 3rd element in the textfile
